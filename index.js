@@ -6,6 +6,7 @@ var bodyParser = require('body-parser')
 
 const AuthRouter = require('./auth/routes.config')
 const UserRouter = require('./users/routes.config')
+const SmsRouter = require('./sms_sender/sms.router')
 
 app.use( (req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*')
@@ -25,6 +26,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 
 AuthRouter.routesConfig(app)
 UserRouter.routesConfig(app)
+SmsRouter.routesConfig(app)
 
 // For requests to the root of the api
 // app.get(process.env.API_VERSION, (req, res) => {

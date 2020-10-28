@@ -24,6 +24,8 @@
   },
   "license": "",
   "dependencies": {
+    "africaistalking": "^1.0.7",
+    "africastalking": "^0.5.2",
     "axios": "^0.20.0",
     "body-parser": "^1.19.0",
     "crypto": "^1.0.1",
@@ -33,6 +35,7 @@
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.27",
     "mongoose": "^5.10.6",
+    "sweetalert": "^2.1.2",
     "uuid": "^3.3.3"
   }
 }
